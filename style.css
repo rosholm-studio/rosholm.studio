@@ -82,7 +82,7 @@ button:active {
     font-family: Inter;
     src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
     font-style: normal;
-    font-variation-settings: 'wght' 400;
+    font-weight: 100 900;
 }
 
 h1 {
@@ -130,7 +130,7 @@ h3 {
     color: var(--white);
     transition: background-color 0.2s ease;
     font-size: 13px;
-    font-variation-settings: 'wght' 500;
+    font-weight: 500;
     line-height: 120%;
     letter-spacing: -0.04px;
     text-align: center;
@@ -148,7 +148,7 @@ h3 {
     color: var(--page-text);
     transition: background-color 0.2s ease;
     font-size: 13px;
-    font-variation-settings: 'wght' 500;
+    font-weight: 500;
     line-height: 120%;
     letter-spacing: -0.04px;
     text-align: center;
