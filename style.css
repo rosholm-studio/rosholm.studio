@@ -1,0 +1,235 @@
+:root {
+    --pageMargin: 12px;
+    --easingOut: cubic-bezier(.16, 1, .3, 1);
+    --easing: cubic-bezier(.83, 0, .17, 1);
+    --black: hsla(0, 0%, 11%, 1);
+    --grey-80: hsla(0, 0%, 16%, 1);
+    --grey-60: hsla(0, 0%, 27%, 1);
+    --grey-50: hsla(0, 0%, 42%, 1);
+    --grey-40: hsla(60, 0%, 60%, 1);
+    --grey-30: hsla(0, 0%, 77%, 1);
+    --grey-20: hsla(0, 0%, 85%, 1);
+    --grey-10: hsla(0, 0%, 92%, 1);
+    --grey-5: hsla(0, 0%, 95%, 1);
+    --white: hsla(0, 0%, 100%, 1);
+    --headerheight: 40px;
+    --bgBlur: 40px;
+    --spacing-4: 4px;
+    --spacing-8: 8px;
+    --spacing-12: 12px;
+    --spacing-16: 16px;
+    --spacing-20: 20px;
+    --spacing-40: 40px;
+    --spacing-60: 60px;
+    --spacing-80: 80px;
+    --spacing-120: 120px;
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+body,h1,h2,h3,h4,p,ul,ol,li,figure,figcaption,blockquote,dl,dd {
+    margin: 0;
+    padding: 0
+}
+
+ul,ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none;
+    color: inherit
+}
+
+a:hover {
+    color: var(--grey-50);
+}
+
+img,picture,video,canvas,svg {
+    display: block;
+    max-width: 100%
+}
+
+input,button,textarea,select {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+@font-face {
+    font-family: SoehneBuch;
+    src: url(/fonts/soehne-buch.woff2) format("woff2");
+    font-style: normal;
+    font-weight: 400
+}
+
+h1 {
+    font-size: 31px;
+    line-height: 110%;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.67px;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.18px;
+    color: var(--grey-40);
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 150%;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.18px;
+    color: var(--page-text);
+
+}
+
+.btn {
+    display: block;
+    padding: 8px 12px;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 100px;
+    background-color: var(--grey-40);
+    color: var(--white);
+    transition: background-color 0.2s ease;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.04px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pill {
+    display: block;
+    width: fit-content;
+    padding: 8px 12px;
+    outline: 0;
+    border-radius: 100px;
+    background-color: var(--grey-10);
+    color: var(--page-text);
+    transition: background-color 0.2s ease;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.04px;
+    text-align: center;
+    text-decoration: none;
+}
+
+body {
+    --page-bg: var(--white);
+    --page-text: var(--grey-80);
+    --page-border: var(--grey-10);
+    --page-button-default: var(--grey-40);
+    --page-button-hover: var(--grey-50);
+    --page-button-active: var(--grey-60);
+    --page-card: var(--grey-10);
+    --page-card-hover: var(--grey-20);
+    --page-text-2: var(--grey-40);
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -.18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: Inter,sans-serif;
+    background-color: var(--page-bg);
+    color: var(--page-text);
+}
+
+.color-secondary {
+    color: var(--page-text-2)
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.7) 100%);
+    backdrop-filter: blur(var(--bgBlur));
+    -webkit-backdrop-filter: blur(var(--bgBlur));   
+}
+
+nav {
+    display: flex;
+    padding: var(--pageMargin);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+main {
+    margin-top: var(--headerheight);
+    padding-top: var(--spacing-60);
+}
+
+.intro {
+    padding: 0 var(--pageMargin);
+}
+
+.intro-text {
+    margin-top: var(--spacing-20);
+}
+
+.recent-projects {
+    padding: 0 var(--pageMargin);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.recent-projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.image-container {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 0 var(--pageMargin);
+}
+
+.section-header {
+    margin-top: var(--spacing-80);
+    padding: 8px 0;
+    border-bottom: solid 1px var(--page-border);
+}
+
