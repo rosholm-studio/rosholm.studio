@@ -94,7 +94,15 @@ h3 {
     font-weight: normal;
     letter-spacing: -0.18px;
     color: var(--page-text);
+}
 
+.big-paragraph {
+    font-size: 25px;
+    line-height: 120%;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.33px;
+    color: var(--page-text);
 }
 
 .btn {
@@ -112,6 +120,7 @@ h3 {
     letter-spacing: -0.04px;
     text-align: center;
     text-decoration: none;
+    width: fit-content;
 }
 
 .pill {
@@ -138,7 +147,7 @@ body {
     --page-button-default: var(--grey-40);
     --page-button-hover: var(--grey-50);
     --page-button-active: var(--grey-60);
-    --page-card: var(--grey-10);
+    --page-card: var(--grey-5);
     --page-card-hover: var(--grey-20);
     --page-text-2: var(--grey-40);
     font-size: 16px;
@@ -202,6 +211,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-top: var(--spacing-80);
 }
 
 .recent-projects-container {
@@ -228,8 +238,64 @@ main {
 }
 
 .section-header {
-    margin-top: var(--spacing-80);
     padding: 8px 0;
     border-bottom: solid 1px var(--page-border);
 }
 
+.cta {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 var(--pageMargin);
+    margin-top: var(--spacing-80);
+}
+
+.services {
+    padding: 0 var(--pageMargin);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: var(--spacing-80);
+    margin-bottom: var(--spacing-80);
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--page-card);
+    padding: 12px;
+    border-radius: 4px;
+}
+
+footer {
+    padding: 0 var(--pageMargin);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0px 12px 0px;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: .04px;
+    border-top: solid 1px var(--page-border);
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
