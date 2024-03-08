@@ -247,6 +247,13 @@ main {
     border-radius: 4px;
 }
 
+.project-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+}
+
 .container {
     display: flex;
     width: 100%;
