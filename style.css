@@ -49,6 +49,9 @@ a:hover {
 }
 
 a:active {
+}
+
+.hover-click:active {
     transform: scale(0.98);
 }
 
@@ -217,16 +220,24 @@ nav {
 }
 
 main {
-    margin-top: var(--headerheight);
-    padding-top: var(--spacing-60);
+    margin-top: calc(var(--headerheight) + var(--spacing-40));
 }
 
 .intro {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
     padding: 0 var(--pageMargin);
 }
 
 .intro-text {
-    margin-top: var(--spacing-20);
+
+}
+
+.pill-btn {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
 }
 
 .recent-projects {
@@ -285,7 +296,6 @@ main {
     flex-direction: column;
     gap: 12px;
     margin-top: var(--spacing-80);
-    margin-bottom: var(--spacing-80);
 }
 
 .services-container {
@@ -306,6 +316,7 @@ main {
 
 footer {
     padding: 0 var(--pageMargin);
+    margin-top: var(--spacing-40);
 }
 
 .footer-container {
@@ -313,8 +324,8 @@ footer {
     justify-content: space-between;
     padding: 8px 0px 12px 0px;
     font-size: 13px;
-    line-height: 140%;
-    letter-spacing: .04px;
+    line-height: 130%;
+    letter-spacing: -.04px;
     border-top: solid 1px var(--page-border);
 }
 
