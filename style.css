@@ -80,9 +80,16 @@ button:active {
 
 @font-face {
     font-family: Inter;
-    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+    src: url(fonts/Inter-Regular.ttf);
     font-style: normal;
-    font-weight: 100 900;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(fonts/Inter-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
 }
 
 h1 {
