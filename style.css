@@ -297,7 +297,7 @@ main {
     padding: 0 var(--pageMargin);
     display: flex;
     flex-direction: column;
-    margin-top: var(--spacing-60);
+    margin-top: var(--spacing-20);
 }
 
 .expected-container {
@@ -429,7 +429,7 @@ main {
     flex-direction: column;
     gap: 12px;
     padding: 0 var(--pageMargin);
-    margin-top: var(--spacing-60);
+    margin-top: var(--spacing-40);
 
 }
 
