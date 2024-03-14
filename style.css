@@ -289,6 +289,13 @@ main {
     margin-top: var(--spacing-60);
 }
 
+.stack {
+    padding: 0 var(--pageMargin);
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacing-60);
+}
+
 .expected-container {
     display: flex;
     flex-direction: column;
@@ -312,6 +319,7 @@ main {
 .image-container {
     overflow: hidden;
     border-radius: 4px;
+    width: 100%;
 }
 
 .project-image {
@@ -404,6 +412,27 @@ main {
 .doodle {
     margin-top: var(--spacing-60);
     padding: 0 var(--pageMargin);
+}
+
+.pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-8);
+}
+
+.project-images {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 0 var(--pageMargin);
+    margin-top: var(--spacing-60);
+
+}
+
+.two-images {
+    display: flex;
+    width: 100%;
+    gap: var(--pageMargin);
 }
 
 footer {
