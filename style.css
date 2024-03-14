@@ -273,7 +273,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: var(--spacing-60);
+    margin-top: var(--spacing-40);
 }
 
 .recent-projects-container {
@@ -286,7 +286,11 @@ main {
     padding: 0 var(--pageMargin);
     display: flex;
     flex-direction: column;
-    margin-top: var(--spacing-60);
+    margin-top: var(--spacing-40);
+}
+
+.full-img {
+    margin-top: var(--spacing-20);
 }
 
 .stack {
@@ -345,7 +349,7 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 0 var(--pageMargin);
-    margin-top: var(--spacing-60);
+    margin-top: var(--spacing-40);
 }
 
 .services {
@@ -353,7 +357,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: var(--spacing-60);
+    margin-top: var(--spacing-40);
 }
 
 .services-container {
