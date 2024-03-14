@@ -138,6 +138,15 @@ h3 {
     color: var(--page-text);
 }
 
+.medium-paragraph {
+    font-size: 20px;
+    line-height: 120%;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -0.33px;
+    color: var(--page-text);
+}
+
 @media (min-width: 768px) {
     .big-paragraph {
         font-size: 31px;
@@ -240,7 +249,7 @@ main {
 
 .intro {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     flex-direction: column;
     padding: 0 var(--pageMargin);
 }
@@ -249,10 +258,14 @@ main {
 
 }
 
-.pill-btn {
+.btns-container {
     display: flex;
     gap: 8px;
     flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
 }
 
 .recent-projects {
@@ -260,10 +273,23 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: var(--spacing-80);
+    margin-top: var(--spacing-60);
 }
 
 .recent-projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.expected {
+    padding: 0 var(--pageMargin);
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--spacing-60);
+}
+
+.expected-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
@@ -292,6 +318,7 @@ main {
     width: 100%;
     height: auto;
     aspect-ratio: attr(width) / attr(height);
+    background: var(--grey-10);
 }
 
 .container {
@@ -310,7 +337,7 @@ main {
     flex-direction: column;
     gap: 20px;
     padding: 0 var(--pageMargin);
-    margin-top: var(--spacing-80);
+    margin-top: var(--spacing-60);
 }
 
 .services {
@@ -318,7 +345,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-top: var(--spacing-80);
+    margin-top: var(--spacing-60);
 }
 
 .services-container {
@@ -353,8 +380,32 @@ main {
 }
 
 .service-title {
-    font-weight: 500;
+    
 }
+
+.list-item {
+    display: flex;
+    gap: 8px;
+    align-items: top;
+    padding: var(--spacing-8) 0;
+}
+
+.bottom-border {
+    border-bottom: solid 1px var(--page-border);
+}
+
+.left-column {
+    width: 50%;
+}
+.right-column {
+    width: 50%;
+}
+
+.doodle {
+    margin-top: var(--spacing-60);
+    padding: 0 var(--pageMargin);
+}
+
 footer {
     padding: 0 var(--pageMargin);
     margin-top: var(--spacing-40);
